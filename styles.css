@@ -186,11 +186,43 @@ body {
     text-align: center;
 }
 
-.block{
-    margin-top:100px;
-    height:500px;
-    background: #242020;
+.find-us{
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.find-us h4{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.social-links{
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.social-item{
+    width:100px;
+    height:100px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    color:black;
+    text-decoration:none;
+    border-radius: 16px;
+    transition:
+    transform 0.3s ease;
+}
+
+.social-item img{
+    width: 32px;
+    height: 32px;
+}
+
+.social-item:hover{
+    transform: translateY(-5px);
 }
