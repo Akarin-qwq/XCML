@@ -6,6 +6,12 @@
     font-display:swap;
 }
 
+@media (max-width: 768px) {
+    .hero{
+        background-position: 65% center;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +26,16 @@ body {
     background: #141313;
     color: white;
     font-family: "LXGWWenKai", sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 100;
 }
 
 .hero{
@@ -45,6 +61,7 @@ body {
 .hero img{
     width: 500px;
     height: auto;
+    transform:rotate(26deg);
 }
 
 .hero p{
@@ -121,14 +138,52 @@ body {
     height: auto;
 }
 
+.image-row{
+    display:flex;
+    gap:20px;
+}
+
+.image-box{
+    flex:1;
+    overflow:hidden;
+    border-radius: 12px;
+}
+
+.image-box img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
 .gallery{
     display:flex;
-    gap:24px;
+    gap:20px;
     overflow-x: auto;
     flex-wrap: nowrap;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    scrollbar-width: none;
+}
+
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-item{
+    flex: 0 0 70%;
+    scroll-snap-align: start;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tips{
+    font-size: 10px;
+    text-align: center;
 }
 
 .block{
