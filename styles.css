@@ -109,7 +109,7 @@ body {
 }
 
 .read{
-    max-width:auto;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 40px;
     background: rgb(255, 255, 255);
