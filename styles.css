@@ -6,10 +6,12 @@
     font-display:swap;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .hero{
-        background-position: 65% center;
-    }
+        background-position: 70% center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
 }
 
 * {
@@ -42,7 +44,7 @@ body {
     height: 100vh;
     background:url("https://imgheybox1.max-c.com/web/bbs/2026/08/31/6123c4bce0aac40863eae3837f3f48cd.jpeg");
     background-size: cover;
-    background-position: center;
+    background-position: 65% center;
     position: sticky;
     top:0;
     display: flex;
@@ -52,19 +54,21 @@ body {
 }
 
 .hero-content {
+    width: 500px;
     text-align: center;
-    position: relative;
-    margin-left: 8%;
+    position: absolute;
+    top: calc(75vh - 250px);
+    margin-left: 5%;
     text-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
 }
 
-.hero img{
-    width: 500px;
+.hero-content img{
+    width: 80%;
     height: auto;
     transform:rotate(26deg);
 }
 
-.hero p{
+.hero-content p{
     margin-top: 30px;
     opacity: 0.8;
 }
@@ -72,7 +76,7 @@ body {
 .content{
     position: relative;
     min-height: 150vh;
-    padding: 100px 15%;
+    padding: 100px 5%;
     background: rgb(255, 255, 255, 0.5);
     z-index: 1;
 }
