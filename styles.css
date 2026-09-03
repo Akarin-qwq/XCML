@@ -6,14 +6,6 @@
     font-display:swap;
 }
 
-@media (max-width: 1000px) {
-    .hero{
-        background-position: 70% center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    } 
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -62,16 +54,32 @@ body {
     text-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
 }
 
-.hero-content img{
-    width: 80%;
+.hero img{
+    width: 70%;
     height: auto;
-    transform:rotate(26deg);
 }
 
-.hero-content p{
+.hero p{
     margin-top: 30px;
     opacity: 0.8;
 }
+
+@media (max-width: 768px) {
+    .hero-content {
+        width: 500px;
+        text-align: center;
+        position: relative;
+        text-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+    }
+
+    .hero img {
+        position: relative;
+        bottom: 25vh;
+        width: 50%;
+        height: auto;
+    }
+}
+
 
 .content{
     position: relative;
