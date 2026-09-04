@@ -1,6 +1,6 @@
 const backtop = document.getElementById("backtop");
-window.addEventListener("scroll",() => {
-    if (window.scrollY > 900){
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300){
         backtop.classList.add("show");
     }
     else {
